@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Styling for navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.refer {
+    background-color: #f0f8ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #0073e6;
+}
+
+/* Styling for the login button */
+.login-btn {
+    background-color: #f9cccc;
+    border: 1px solid #ff4d4d;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #ff4d4d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="masai-logo.png" alt="Masai Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#">Courses</a>
+            <a href="#">Fees & ISA</a>
+            <a href="#">About Us</a>
+            <a href="#">Hire From Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Events</a>
+            <a href="#" class="refer">Refer & Earn</a>
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+</body>
+</html>
